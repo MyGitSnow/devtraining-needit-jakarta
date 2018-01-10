@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="5" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="HR"/>
+                <element label="Facilities" sequence="1" value="Facilities"/>
+                <element label="Legal" sequence="2" value="Legal"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" max_length="40" name="u_choice_2" type="string" use_dependent_field="true">
+            <choice>
+                <element label="Other" sequence="0" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+    </element>
+</database>
